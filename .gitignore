@@ -1,0 +1,29 @@
+# Build products
+**/bin/
+**/build/
+**/out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+
+# Editor, OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary output, runtime secrets, cache
+*.log
+*.tmp
+__pycache__/
+.env
+.env.*
+*.key
+*.pem
+seed.bin
+private_key.txt

@@ -1,0 +1,15 @@
+name: C++14 starter compile and smoke test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build starter
+        run: make -C project_01_source
+      - name: Smoke tests (NOT DH correctness)
+        run: make -C project_01_source test
